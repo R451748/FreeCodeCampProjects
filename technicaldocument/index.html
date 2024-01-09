@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JAVA DOCUMENTATION</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Data_Types"> Data Types</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Variables"> Variables </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#If_else_statements">
+            If else statements
+          </a>
+        </li>
+         <li>
+          <a class="nav-link" href="#Scope">
+            Scope
+          </a>
+        </li>
+         <li>
+          <a class="nav-link" href="#For_Loop">
+            For Loop
+          </a>
+        </li>
+         <li>
+          <a class="nav-link" href="#While_statements">
+            While statements
+          </a>
+        </li>
+         <li>
+          <a class="nav-link" href="#Reference">
+            Reference
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+      <article>
+        <p>Java is a versatile, object-oriented programming language that has become a cornerstone in the world of software development. Developed by Sun Microsystems (now owned by Oracle), Java was designed to be platform-independent, allowing developers to write code that can run on various devices and operating systems. Known for its simplicity, portability, and robustness, Java has been widely adopted for building a diverse range of applications, from web and mobile applications to enterprise-level systems. Its "write once, run anywhere" philosophy, facilitated by the Java Virtual Machine (JVM), has made it a popular choice for developers seeking a reliable and scalable language for creating cross-platform solutions. With a vast ecosystem of libraries and frameworks, Java continues to be a powerhouse in the programming world, driving innovation and powering countless applications across different domains.</p>  
+    </article>
+    </section>
+    <section id="Data_Types" class="main-section">
+        <header>Data Types</header>
+      <article>
+        <p>In Java, a data type is a classification of the type of data that a variable can hold. It specifies the size and format of values that can be stored in the variable. Java is a statically-typed language, which means that you must declare the data type of a variable before you can use it.</p>  
+        <p>Data types in Java can be broadly categorized into two main groups:</p>
+            <li><b>Primitive Data Types:</b> These are the basic data types provided by Java, and they are not objects. They include:</li>
+        <ul>
+            <li><b>int:</b> Used to store integer values.</li>
+        </ul>
+        <code>int myNumber = 42;
+        </code>
+        <ul>
+            <li><b>double:</b> Double data type is used to store floating-point numbers with decimals.</li>
+        </ul>
+        <code>double myDouble = 3.14;
+        </code>
+        <ul>
+            <li><b>char:</b> Char data type is used to store a single character.</li>
+        </ul>
+        <code>char myChar = 'A';
+        </code>
+        <ul>
+            <li><b>boolean:</b> Boolean data type is used for variables that hold either true or false.</li>
+        </ul>
+        <code>boolean isJavaFun = true;
+        </code>
+        <ul>
+            <li><b>long:</b> Long data type is used to store larger whole numbers.</li>
+        </ul>
+        <code>long bigNumber = 1234567890L;
+        </code>
+        <ul>
+            <li><b>float:</b> Float data type is used to store floating-point numbers with decimals (similar to double but with less precision).</li>
+        </ul>
+        <code>float myFloat = 2.718f;
+        </code>
+        <ul>
+            <li><b>byte:</b> Byte data type is used to store small integer.</li>
+        </ul>
+        <code>byte smallNumber = 127;
+        </code>
+        <ul>
+            <li><b>short:</b> Short data type is used to store integers that may not require the full range of an int.</li>
+        </ul>
+        <code>short smallInt = 1000;            ;
+        </code>
+            <li><b>Reference Data Types:</b> These are used to refer to objects. Reference data types do not contain the actual data stored in a variable, but they contain a reference (memory address) to the location where the data is stored. Examples include:</li>
+        <ul>
+            <li><b>string:</b> String data type is used to store sequences of characters.</li>
+        </ul>
+        <code>String greeting = "Hello, World!";
+        </code>
+        <ul>
+            <li><b>Arrays:</b> Arrays allow you to store multiple values of the same type in a single variable.</li>
+        </ul>
+        <code>int[] numbers = {1, 2, 3, 4, 5};
+        </code>
+    </article>
+    </section>
+    <section id="Variables" class="main-section">
+        <header>Variables</header>
+      <article>
+        <p>In Java, a variable is a named storage location that holds data. Each variable has a specific data type, and its value can be modified during the execution of the program.</p>  
+        <code>
+            public class VariableExample {
+                public static void main(String[] args) {
+                    // Primitive data types
+                    int age = 25;
+                    double salary = 50000.50;
+                    char grade = 'A';
+                    boolean isStudent = true;
+            
+                    // String
+                    String name = "John Doe";
+            
+                    // Arrays
+                    int[] numbers = {1, 2, 3, 4, 5};
+                    String[] colors = {"Red", "Green", "Blue"};
+            
+                    // Object reference
+                    java.util.Scanner scanner = new java.util.Scanner(System.in);
+            
+                    // Constant
+                    final double PI = 3.14;
+            
+                    // Displaying values
+                    System.out.println("Name: " + name);
+                    System.out.println("Age: " + age);
+                    System.out.println("Salary: " + salary);
+                    System.out.println("Grade: " + grade);
+                    System.out.println("Is a student: " + isStudent);
+            
+                    System.out.print("Numbers: ");
+                    for (int num : numbers) {
+                        System.out.print(num + " ");
+                    }
+                    System.out.println();
+            
+                    System.out.print("Colors: ");
+                    for (String color : colors) {
+                        System.out.print(color + " ");
+                    }
+                    System.out.println();
+            
+                    System.out.print("Enter a value: ");
+                    int userInput = scanner.nextInt();
+                    System.out.println("User input: " + userInput);
+            
+                    System.out.println("Value of PI: " + PI);
+                }
+            }
+            
+        </code>
+        </article>
+        </section>
+        <section id="If_else_statements" class="main-section">
+            <header>If else statements</header>
+          <article>
+            <p>In Java, the if-else statement is used for conditional branching in a program. It allows you to execute a block of code if a specified condition is true, and an alternative block of code if the condition is false. Here's a basic example:</p>  
+            <code>public class IfElseExample {
+                public static void main(String[] args) {
+                    int number = 10;
+            
+                    // If-else statement
+                    if (number > 0) {
+                        System.out.println("The number is positive.");
+                    } else {
+                        System.out.println("The number is non-positive.");
+                    }
+                }
+            }
+            </code>
+        </article>
+        </section>
+        <section id="Scope" class="main-section">
+            <header>Scope</header>
+          <article>
+            <p>In Java, the scope refers to the region of the code where a particular variable can be accessed or modified. There are three main types of variable scope in Java: local scope, instance scope (or object scope), and class scope (or static scope).</p>  
+            <li><b>Local Scope:</b></li>
+          <ul>
+            <li>Variables declared within a method, block, or loop have local scope.</li>
+            <li>They are only accessible within the block or method where they are declared.</li>
+            <li>Example:</li>
+          </ul>
+          <code>public class LocalScopeExample {
+            public void exampleMethod() {
+                int localVar = 5; // local variable
+                System.out.println(localVar);
+            }
+        }
+        </code>
+        <li><b>Instance Scope:</b></li>
+        <ul>
+            <li>Instance variables are declared within a class but outside of any method, constructor, or block.</li>
+            <li>They are associated with an instance of the class (object) and can be accessed by methods within that class.</li>
+            <li>Example:</li>
+        </ul>
+        <code>
+            public class InstanceScopeExample {
+                // Instance variable
+                int instanceVar = 10;
+            
+                public void printInstanceVar() {
+                    System.out.println(instanceVar);
+                }
+            }            
+        </code>
+        </article>
+        </section>
+        <li><b>Static Scope:</b></li>
+        <ul>
+            <li>Static variables are declared with the static keyword within a class, but outside of any method or block.</li>
+            <li>They are associated with the class itself rather than with instances of the class.</li>
+            <li>Example:</li>
+        </ul>
+        <code>
+            public class StaticScopeExample {
+                // Static variable
+                static int staticVar = 20;
+            
+                public static void printStaticVar() {
+                    System.out.println(staticVar);
+                }
+            }             
+        </code>
+        </article>
+        </section>
+        <section id="For_Loop" class="main-section">
+            <header>For Loop</header>
+          <article>
+            <p>In Java, the for loop is a control flow statement that allows you to repeatedly execute a block of code a specified number of times. The general syntax of a for loop is as follows:</p>
+        <code>
+            for (initialization; condition; update) {
+                // code to be executed
+            }            
+        </code>
+        <ul>
+            <li>initialization: This is where you initialize the loop control variable. It is executed only once at the beginning of the loop.</li>
+            <li>condition: This is the boolean expression that is evaluated before each iteration. If it evaluates to true, the loop continues; otherwise, it terminates.</li>
+            <li>update: This is usually an increment or decrement operation that modifies the loop control variable. It is executed after each iteration.</li>
+        </ul>
+        <p>Here's a simple example that prints numbers from 1 to 5 using a for loop:</p>
+        <code>
+            public class ForLoopExample {
+                public static void main(String[] args) {
+                    // Loop that prints numbers from 1 to 5
+                    for (int i = 1; i <= 5; i++) {
+                        System.out.println(i);
+                    }
+                }
+            }            
+        </code>
+        </article>
+        </section>
+        <section id="While_statements" class="main-section">
+            <header>While statements</header>
+          <article>
+        <p>In Java, the while statement is a control flow statement that repeatedly executes a block of code as long as a specified condition is true. The general syntax of a while loop is as follows:</p> 
+       <code>
+        while (condition) {
+            // code to be executed
+        }
+              
+        </code>
+        <ul>
+            <li>condition: This is the boolean expression that is evaluated before each iteration. If it evaluates to true, the loop continues; otherwise, it terminates.</li>
+        </ul>
+        <p>Here's a simple example that prints numbers from 1 to 5 using a while loop:</p>
+        <code>
+            public class WhileLoopExample {
+                public static void main(String[] args) {
+                    // Loop that prints numbers from 1 to 5 using a while loop
+                    int i = 1; // Initialization
+                    while (i <= 5) { // Condition
+                        System.out.println(i);
+                        i++; // Update
+                    }
+                }
+            }            
+        </code>
+        </article>
+        </section>
+        <section id="Reference" class="main-section">
+            <header>Reference</header>
+          <article>
+            <li>All the documentation in this page is taken from chatgpt</li>  
+        </article>
+        </section>
+    </main>
+    </body>
+</html>

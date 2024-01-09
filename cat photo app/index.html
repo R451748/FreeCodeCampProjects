@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey</title>
+</head>
+<body>
+  <h1 id="title">JOB SURVEY</h1>
+  <p id="description">Please take a few minutes to fill out when conducting an observation</p>
+  <form id="survey-form">
+    <label id="name-label">Name:</label>
+    <input id="name" type="text" placeholder="enter your name" required>
+    <br />
+    <br />
+    <label id="email-label">email:</label>
+    <input id="email" type="email" placeholder="enter email" required>
+    <br />
+    <br/>
+    <label id="number-label">Number:</label>
+    <input id="number"type="number" placeholder="enter number" min=1 max=100  required >
+    <br />
+    <br />
+    <label>experience</label>
+    <select id="dropdown">
+      <option > fresher</option>
+      <option > experience</option>
+    </select>
+    <br/>
+    <br /> 
+    <h3> have html experience</h3>
+    <label>yes</label>
+      <input type="radio" id="html" name=" htmlop" value="html">
+      <label>no</label>
+      <input type="radio" id="html" name=" htmlop" value="html">
+      <br />
+      <h3> have css experience</h3>
+      <label>yes</label>
+      <input type="radio" id="css" name="cssop" value="css">
+           <label>no</label>
+      <input type="radio" id="css" name="cssop" value="css">
+      <br/>
+      <h3> have javascript experience</h3>
+        <label>yes</label>
+      <input type="radio" id="javascript" name="js" value="javs">
+      <label>no</label>
+       <input type="radio" id="javascript" name="js" value="javs">
+       <h3> Are you ready to relocate</h3>
+        <label>yes</label>
+      <input type="checkbox" id="yes" name="yo" value="yees">
+      <label>no</label>
+       <input type="checkbox" id="no" name="noo" value="no">
+       <h3> any feedback</h3>
+       <textarea>
+         </textarea>
+         <br/>
+         <br/>
+         <button id="submit" type="submit">submit</button>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">

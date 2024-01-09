@@ -1,0 +1,30 @@
+#image{
+    align-items:center;
+    margin:0 auto;
+    max-width:100%;
+    height:auto;
+    display:block;
+  }
+  #title,p,#img-caption,h3{
+    text-align: center;
+  }
+  #main{
+    display:block;
+    background-color: antiquewhite;
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  #tribute-info{
+   display: block;
+  }
+  ul{
+    margin: 0 auto 50 auto;
+    text-align: left;
+    max-width: 550px;
+    line-height: 1.6;
+  }
+  li{
+    display: list-item;
+    margin: 16px 0;
+  }
